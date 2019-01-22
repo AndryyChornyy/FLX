@@ -1,0 +1,194 @@
+@media print {
+
+    .tm-sidebar,
+    .img-fluid,
+    .heading,
+    .blocks,
+    #ideas,
+    #about,
+    #contact {
+        display: none;
+    }
+
+
+    h2.tm-section-title {
+        color: blue;
+    }
+
+    .tm-main-content {
+        width: 80%;
+        margin: auto;
+    }
+
+    .flex-2-col {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tm-team-description-container {
+        max-width: 100%;
+    }
+
+    .tm-section-description:nth-child(2) {
+        font-style: italic;
+    }
+
+    img[alt="epam-mexico"] {
+        width: 80%;
+    }
+
+    div.tm-team-description-container>p {
+        text-indent: 20px;
+    }
+
+    p:first-letter {
+        color: #87CEFA;
+        font-size: 30px;
+    }
+
+}
+
+@media screen {
+    .tm-content-box.flex-2-col:first-child {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    img[alt="epam-mexico"] {
+        width: 100%;
+    }
+
+    #about ul li.box-bg:hover {
+        background-color: #31b0d5;
+        cursor: pointer;
+    }
+
+    #about ul li.box-bg h2:hover {
+        color: white;
+        font-weight: bold;
+    }
+
+    p:first-letter {
+        color: #87CEFA;
+        font-size: 30px;
+    }
+
+    .tm-content-box,
+    .tm-sidebar,
+    .blocks {
+        box-shadow: 0 0 20px rgba(179, 179, 179, 0.9);
+    }
+
+    .blocks .tm-content-box {
+        box-shadow: none;
+    }
+
+    .tm-banner {
+        border: 30px solid #f5f5f5;
+        padding: 0;
+    }
+
+    .tm-content-box,
+    section {
+        position: relative;
+    }
+
+    section::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-top: 30px solid #87CEFA;
+        border-right: 180px solid transparent;
+        content: '';
+    }
+
+    .tm-content-box.flex-2-col:nth-child(2)::after {
+        display: none;
+    }
+
+    div.carousel-content h2.tm-section-title {
+        color: gainsboro;
+        letter-spacing: 5px;
+    }
+
+    h2+p {
+        font-style: italic;
+    }
+
+    p {
+        text-indent: 15px;
+        line-height: 1.7;
+    }
+
+    .text:first-child::after,
+    .text:nth-child(3)::after {
+        color: red;
+        font-size: 10px;
+        content: "New";
+        vertical-align: super;
+    }
+
+    .padding-medium ol a:visited {
+        text-decoration: underline;
+    }
+
+    .padding-medium ol a:hover {
+        color: lightskyblue;
+        text-decoration: underline double;
+    }
+
+    .padding-medium ol a {
+        color: black;
+    }
+
+    .box-work {
+        padding: 10px;
+    }
+
+    .boxes.gallery-container div p {
+        color: black;
+        line-height: 1.6em;
+        text-indent: initial;
+    }
+
+    section.blocks ul li:nth-child(even) {
+        background: #f2f2f2;
+    }
+
+    .blocks .tm-content-box ul li p:first-letter {
+        color: black;
+    }
+
+    .mandatory-field::after {
+        color: red;
+        vertical-align: top;
+        font-weight: bold;
+        content: "*";
+    }
+
+    .contact-form button {
+        background: #ffffff;
+        color: lightskyblue;
+        border: 1px solid lightskyblue;
+        border-radius: 0;
+        padding: 20px 50px;
+    }
+
+    .contact-form {
+        text-align: right;
+    }
+
+    .submit-btn:hover {
+        color: #f2f2f2;
+        background: #8ac9ff;
+        border-color: transparent;
+    }
+
+    .tm-nav-item:hover {
+        background-color: whitesmoke;
+    }
+
+}
