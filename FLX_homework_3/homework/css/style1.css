@@ -1,0 +1,181 @@
+body {
+  background: white;
+  color: black;
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  line-height: 25px; }
+
+header {
+  background: url("../img/header_background_v1.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  text-transform: uppercase;
+  color: #ede6e3; }
+  header .logo {
+    width: 15%; }
+    header .logo img {
+      width: 100%; }
+  header .top-wrapper {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; }
+  header nav {
+    padding: 10px; }
+    header nav a {
+      color: #ede6e3;
+      padding: 10px 100px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 600; }
+      header nav a:nth-child(2) {
+        border-left: 2px solid #607e8c;
+        border-right: 2px solid #607e8c; }
+      header nav a:hover {
+        color: #c5afa5; }
+  header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%); }
+    header section .btn {
+      cursor: pointer;
+      margin-top: 20px;
+      padding: 10px 70px;
+      background: #00adad;
+      border: none;
+      text-decoration: none;
+      color: #eeeeee;
+      transition-duration: 0.5s; }
+      header section .btn:hover {
+        background: #004747; }
+
+main {
+  max-width: 960px;
+  margin: auto; }
+  main .toolbar {
+    text-align: right;
+    padding: 7px 0; }
+    main .toolbar input {
+      border: 2px solid;
+      border-color: #becad0;
+      padding: 12px 12px 12px 15px;
+      margin: 10px;
+      color: black;
+      background: white;
+      font-size: 15px; }
+      main .toolbar input::placeholder {
+        color: black; }
+  main .post-list h1 {
+    text-align: right;
+    text-transform: uppercase;
+    margin: 5px 0 0 0; }
+  main .post-list article {
+    background: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    main .post-list article > div {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+    main .post-list article .btn {
+      cursor: pointer;
+      padding: 10px 85px;
+      margin-bottom: 10px;
+      border: 0;
+      background: #00adad;
+      color: #eeeeee;
+      text-transform: uppercase;
+      transition-duration: 0.5s; }
+      main .post-list article .btn:hover {
+        background: #004747; }
+  main .post h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #0098a8;
+    text-transform: uppercase; }
+  main .post > p {
+    margin-top: 0;
+    line-height: 30px; }
+  main .post .post-description {
+    padding-left: 5px;
+    font-size: 0.8em;
+    color: red;
+    border-bottom: 1px solid #5f7e8c;
+    padding-bottom: 10px;
+    margin-bottom: 10px; }
+
+.about {
+  padding: 10px; }
+  .about h1 {
+    text-align: right;
+    margin: 40px 5px 0 5px;
+    text-transform: uppercase; }
+  .about p {
+    line-height: 25px;
+    margin-top: 0;
+    margin-bottom: 20px; }
+  .about img {
+    max-width: 960px;
+    width: 100%; }
+
+.contact-form {
+  text-align: right; }
+  .contact-form h1 {
+    margin-bottom: 0; }
+  .contact-form h4 {
+    margin-top: 0;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .contact-form .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px; }
+    .contact-form .form div {
+      width: 100%;
+      display: inline-block; }
+      .contact-form .form div:nth-child(1) {
+        margin-right: 10px; }
+  .contact-form form {
+    font-size: 15px; }
+    .contact-form form input,
+    .contact-form form label {
+      width: 100%;
+      display: block; }
+    .contact-form form label {
+      color: #0098a8; }
+    .contact-form form input,
+    .contact-form form textarea {
+      color: black;
+      background: inherit;
+      padding: 15px;
+      box-sizing: border-box;
+      border: 1px solid #bbbbbb; }
+    .contact-form form textarea {
+      width: 100%; }
+    .contact-form form button {
+      cursor: pointer;
+      padding: 10px 85px;
+      border: 0;
+      background: #00adad;
+      border: none;
+      text-decoration: none;
+      color: #eeeeee;
+      transition-duration: 0.5s; }
+      .contact-form form button:hover {
+        background: #004747; }
+
+footer {
+  padding: 10px;
+  font-size: 14px; }

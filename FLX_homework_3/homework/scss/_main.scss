@@ -1,0 +1,271 @@
+// Write your styles here
+body {
+    background: $back-color;
+    color: $text-color;
+    font-family: $font-stack;
+    font-size: $font-size;
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+}
+
+header {
+    background: $back-img no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-transform: uppercase;
+    color: $header-color;
+
+    .logo {
+        width: 15%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .top-wrapper {
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    nav {
+        padding: 10px;
+
+        a {
+            color: $header-color;
+            padding: 10px 100px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 600;
+
+            &:nth-child(2) {
+                border-left: 2px solid $nav-border;
+                border-right: 2px solid $nav-border;
+            }
+
+            &:hover {
+                color: darken($header-color, 20%);
+            }
+        }
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 35%;
+        transform: translateY(-50%);
+
+        .btn {
+            cursor: pointer;
+            margin-top: 20px;
+            padding: 10px 70px;
+            background: $button-color;
+            border: none;
+            text-decoration: none;
+            color: #eeeeee;
+            transition-duration: 0.5s;
+
+            &:hover {
+                background: darken($button-color, 20%);
+            }
+        }
+    }
+}
+
+main {
+    max-width: 960px;
+    margin: auto;
+
+    .toolbar {
+        text-align: right;
+        padding: 7px 0;
+
+        input {
+            border: 2px solid;
+            border-color: $inputBorder-color;
+            padding: 12px 12px 12px 15px;
+            margin: 10px;
+            color: $text-color;
+            background: $back-color;
+            font-size: 15px;
+
+            &::placeholder {
+                color: $placeholder-color;
+            }
+        }
+    }
+
+    .post-list {
+        h1 {
+            text-align: right;
+            text-transform: uppercase;
+            margin: 5px 0 0 0;
+        }
+
+        article {
+            background: $article-back;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            >div {
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+            .btn {
+                cursor: pointer;
+                padding: 10px 85px;
+                margin-bottom: 10px;
+                border: 0;
+                background: $button-color;
+                color: #eeeeee;
+                text-transform: uppercase;
+                transition-duration: 0.5s;
+
+                &:hover {
+                    background: darken($button-color, 20%);
+                }
+            }
+
+        }
+
+    }
+
+    .post {
+        h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+            color: $h3-color;
+            text-transform: uppercase;
+        }
+
+        >p {
+            margin-top: 0;
+            line-height: 30px;
+        }
+
+        .post-description {
+            padding-left: 5px;
+            font-size: 0.8em;
+            color: $postDscr-color;
+            border-bottom: 1px solid $article-border;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+
+}
+
+.about {
+    padding: 10px;
+
+    h1 {
+        text-align: right;
+        margin: 40px 5px 0 5px;
+        text-transform: uppercase;
+    }
+
+    p {
+        line-height: 25px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    img {
+        max-width: 960px;
+        width: 100%;
+    }
+}
+
+.contact-form {
+    text-align: right;
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    h4 {
+        margin-top: 0;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        div {
+            width: 100%;
+            display: inline-block;
+
+            &:nth-child(1) {
+                margin-right: 10px;
+            }
+        }
+
+
+    }
+
+    form {
+        font-size: $font-size;
+
+        input,
+        label {
+            width: 100%;
+            display: block;
+        }
+
+        label {
+            color: $h3-color;
+        }
+
+        input,
+        textarea {
+            color: $text-color;
+            background: inherit;
+            padding: 15px;
+            box-sizing: border-box;
+            border: 1px solid #bbbbbb;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 10px 85px;
+            border: 0;
+            background: $button-color;
+            border: none;
+            text-decoration: none;
+            color: #eeeeee;
+            transition-duration: 0.5s;
+
+            &:hover {
+                background: darken($button-color, 20%);
+            }
+
+        }
+    }
+}
+
+footer {
+    padding: 10px;
+    font-size: 14px;
+}
