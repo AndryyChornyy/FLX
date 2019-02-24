@@ -1,0 +1,84 @@
+/* Your styles goes here */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 700px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+#root {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#root p {
+    color: red;
+    visibility: hidden;
+    margin: 10px 0 0;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 2fr auto;
+    padding: 5px 0 25px;
+    border-bottom: 2px solid black;
+}
+
+form input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+form input::placeholder {
+    color: #d9d9d9;
+}
+
+.off {
+    color: grey;
+    cursor: no-drop;
+}
+
+.material-icons {
+    margin: -5px;
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.action-list {
+    list-style-type: none;
+    padding-top: 10px;
+    height: 420px;
+}
+
+.list-item {
+    display: grid;
+    grid-template-columns: auto 2fr auto;
+    padding: 5px 0;
+    align-items: center;
+}
+
+.list-item span {
+    padding: 5px 10px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.move {
+    border-top: 2px solid black;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    padding-top: 10px;
+}
