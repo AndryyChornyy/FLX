@@ -1,0 +1,117 @@
+/* Your styles go here */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    min-height: 320px;
+    margin: 28px auto;
+}
+
+section {
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    font-size: 13px;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+h1 {
+    margin: 15px;
+}
+
+#new-task {
+    font-size: 18px;
+    margin: 23px;
+    padding: 4px 20px 4px 20px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#new-task,
+.btnCan,
+.btnSave {
+    padding: 11px 32px;
+    border-radius: 5px;
+}
+
+ul:empty+p {
+    display: block;
+}
+
+button {
+    padding: 6px;
+    cursor: pointer;
+}
+
+.todo-text {
+    font-size: 25px;
+}
+
+
+
+.remove {
+    background-image: url("./img/remove-s.jpg");
+}
+
+.empty-todo {
+    text-align: center;
+    display: none;
+}
+
+.todo-text {
+    flex: 1;
+}
+
+.empty-todo {
+    font-size: 18px;
+}
+
+.box-done,
+.box-undone,
+.todo-text,
+.remove {
+    border: 0;
+    background-color: unset;
+    width: 30px;
+    height: 30px;
+}
+
+.box-undone {
+    background-image: url("./img/todo-s.png");
+}
+
+.box-done {
+    background-image: url("./img/done-s.png");
+}
+
+.box-done+.todo-text {
+    background: rgb(211, 211, 211);
+}
+
+footer {
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+}
